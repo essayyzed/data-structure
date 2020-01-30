@@ -1,0 +1,164 @@
+============================= test session starts ==============================
+platform linux2 -- Python 2.7.15+, pytest-3.10.1, py-1.8.0, pluggy-0.12.0
+rootdir: /home/an0nym0us/Downloads/assignment2, inifile:
+plugins: timeout-1.3.3
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 7 items
+
+test_student.py ....F.F                                                  [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_s_employee_2 _______________________________
+
+    def test_s_employee_2():
+        e = Employee()
+        e.set_current_address(1, 2, "Cape Town", "South Africa")
+>       assert e.get_permanent_address()  == 'None' or e.get_permanent_address() is None
+E       AssertionError: assert ('<bound metho...f3779217908>>' == 'None'
+E         - <bound method Employee.get_permanent_address of <assignment2.a02.Employee instance at 0x7f3779217908>>
+E         + None or '<bound method Employee.get_permanent_address of <assignment2.a02.Employee instance at 0x7f3779217908>>' is None)
+E        +  where '<bound method Employee.get_permanent_address of <assignment2.a02.Employee instance at 0x7f3779217908>>' = <bound method Employee.get_permanent_address of <assignment2.a02.Employee instance at 0x7f3779217908>>()
+E        +    where <bound method Employee.get_permanent_address of <assignment2.a02.Employee instance at 0x7f3779217908>> = <assignment2.a02.Employee instance at 0x7f3779217908>.get_permanent_address
+
+test_student.py:43: AssertionError
+______________________________ test_s_lecturer_1 _______________________________
+
+    def test_s_lecturer_1():
+>       l = Lecturer()
+
+test_student.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <assignment2.a02.Lecturer instance at 0x7f3779217758>
+
+    def __init__(self):
+>       super().__init__(1, "Mr. Bigshot")
+E       TypeError: super() takes at least 1 argument (0 given)
+
+a02.py:41: TypeError
+====================== 2 failed, 5 passed in 0.18 seconds ======================
+============================= test session starts ==============================
+platform linux2 -- Python 2.7.15+, pytest-3.10.1, py-1.8.0, pluggy-0.12.0
+rootdir: /home/an0nym0us/Downloads/assignment2, inifile:
+plugins: timeout-1.3.3
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 7 items
+
+test_student.py ....F.F                                                  [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_s_employee_2 _______________________________
+
+    def test_s_employee_2():
+        e = Employee()
+        e.set_current_address(1, 2, "Cape Town", "South Africa")
+>       assert e.get_permanent_address()  == 'None' or e.get_permanent_address() is None
+E       AssertionError: assert ('<bound metho...fced1241638>>' == 'None'
+E         - <bound method Employee.get_permanent_address of <assignment2.a02.Employee instance at 0x7fced1241638>>
+E         + None or '<bound method Employee.get_permanent_address of <assignment2.a02.Employee instance at 0x7fced1241638>>' is None)
+E        +  where '<bound method Employee.get_permanent_address of <assignment2.a02.Employee instance at 0x7fced1241638>>' = <bound method Employee.get_permanent_address of <assignment2.a02.Employee instance at 0x7fced1241638>>()
+E        +    where <bound method Employee.get_permanent_address of <assignment2.a02.Employee instance at 0x7fced1241638>> = <assignment2.a02.Employee instance at 0x7fced1241638>.get_permanent_address
+
+test_student.py:43: AssertionError
+______________________________ test_s_lecturer_1 _______________________________
+
+    def test_s_lecturer_1():
+>       l = Lecturer()
+
+test_student.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <assignment2.a02.Lecturer instance at 0x7fced12febd8>
+
+    def __init__(self):
+>       super().__init__(1, "Mr. Bigshot")
+E       TypeError: super() takes at least 1 argument (0 given)
+
+a02.py:41: TypeError
+====================== 2 failed, 5 passed in 0.04 seconds ======================
+================================================================ test session starts =================================================================
+platform linux2 -- Python 2.7.15+, pytest-3.10.1, py-1.8.0, pluggy-0.12.0
+rootdir: /home/an0nym0us/Downloads/assignment2, inifile:
+plugins: timeout-1.3.3
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 7 items
+
+test_student.py ....F.F                                                                                                                        [100%]
+
+====================================================================== FAILURES ======================================================================
+_________________________________________________________________ test_s_employee_2 __________________________________________________________________
+
+    def test_s_employee_2():
+        e = Employee()
+        e.set_current_address(1, 2, "Cape Town", "South Africa")
+>       assert e.get_permanent_address()  == 'None' or e.get_permanent_address() is None
+E       AssertionError: assert ('<bound metho...f072056c638>>' == 'None'
+E         - <bound method Employee.get_permanent_address of <assignment2.a02.Employee instance at 0x7f072056c638>>
+E         + None or '<bound method Employee.get_permanent_address of <assignment2.a02.Employee instance at 0x7f072056c638>>' is None)
+E        +  where '<bound method Employee.get_permanent_address of <assignment2.a02.Employee instance at 0x7f072056c638>>' = <bound method Employee.get_permanent_address of <assignment2.a02.Employee instance at 0x7f072056c638>>()
+E        +    where <bound method Employee.get_permanent_address of <assignment2.a02.Employee instance at 0x7f072056c638>> = <assignment2.a02.Employee instance at 0x7f072056c638>.get_permanent_address
+
+test_student.py:43: AssertionError
+_________________________________________________________________ test_s_lecturer_1 __________________________________________________________________
+
+    def test_s_lecturer_1():
+>       l = Lecturer()
+
+test_student.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <assignment2.a02.Lecturer instance at 0x7f07206295a8>
+
+    def __init__(self):
+>       super().__init__(1, "Mr. Bigshot")
+E       TypeError: super() takes at least 1 argument (0 given)
+
+a02.py:41: TypeError
+========================================================= 2 failed, 5 passed in 0.04 seconds =========================================================
+============================= test session starts ==============================
+platform linux2 -- Python 2.7.15+, pytest-3.10.1, py-1.8.0, pluggy-0.12.0
+rootdir: /home/an0nym0us/Downloads/assignment2, inifile:
+plugins: timeout-1.3.3
+timeout: 3.0s
+timeout method: signal
+timeout func_only: False
+collected 7 items
+
+test_student.py ....F.F                                                  [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_s_employee_2 _______________________________
+
+    def test_s_employee_2():
+        e = Employee()
+        e.set_current_address(1, 2, "Cape Town", "South Africa")
+>       assert e.get_permanent_address()  == 'None' or e.get_permanent_address() is None
+E       AssertionError: assert ('<bound metho...f6aa03ff638>>' == 'None'
+E         - <bound method Employee.get_permanent_address of <assignment2.a02.Employee instance at 0x7f6aa03ff638>>
+E         + None or '<bound method Employee.get_permanent_address of <assignment2.a02.Employee instance at 0x7f6aa03ff638>>' is None)
+E        +  where '<bound method Employee.get_permanent_address of <assignment2.a02.Employee instance at 0x7f6aa03ff638>>' = <bound method Employee.get_permanent_address of <assignment2.a02.Employee instance at 0x7f6aa03ff638>>()
+E        +    where <bound method Employee.get_permanent_address of <assignment2.a02.Employee instance at 0x7f6aa03ff638>> = <assignment2.a02.Employee instance at 0x7f6aa03ff638>.get_permanent_address
+
+test_student.py:43: AssertionError
+______________________________ test_s_lecturer_1 _______________________________
+
+    def test_s_lecturer_1():
+>       l = Lecturer()
+
+test_student.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <assignment2.a02.Lecturer instance at 0x7f6aa04670e0>
+
+    def __init__(self):
+>       super().__init__(1, "Mr. Bigshot")
+E       TypeError: super() takes at least 1 argument (0 given)
+
+a02.py:41: TypeError
+====================== 2 failed, 5 passed in 0.05 seconds ======================
